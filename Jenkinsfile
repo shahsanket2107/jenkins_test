@@ -8,7 +8,7 @@ pipeline {
        }
        stage("Push Image to Repo"){
           steps{
-            withCredentials([string(credentialsId: 'dhpass', variable: 'pass')]) {
+            withCredentials([string(credentialsId: 'sanket', variable: 'pass')]) {
              sh "docker login -u shahsanketdocker -p ${pass}"
              sh "docker push shahsanketdocker/repo1:${BUILD_ID}"
             }  
