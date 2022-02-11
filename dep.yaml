@@ -15,7 +15,7 @@ spec:
         app: mydep
     spec:
       containers:
-      - image: 966145/newapp:mtag
+      - image: shahsanketdocker/repo1:mtag
         name: nginx
         ports:
         - containerPort: 80
